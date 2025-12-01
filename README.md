@@ -1,4 +1,33 @@
- Árvore Binária de Busca (BST) - Implementação em JavaEste repositório contém o código-fonte da minha implementação didática e funcional de uma Árvore Binária de Busca (Binary Search Tree - BST), desenvolvida como projeto individual da disciplina de Estruturas de Dados II.O projeto foca na abordagem encadeada (ligada), que permite manipulação dinâmica da memória e maior eficiência nas operações.🎬 Assista ao VídeoTodo o conteúdo teórico, prático e a demonstração de execução deste código estão detalhados no meu vídeo oficial do projeto:PlataformaLinkYouTube (Vídeo Completo)Clique para assistir: BST - Do Conceito ao Código Java!👤 Autor e ContatoAutor: KayoGitHub: Kay0oxInstagram: @kay0ox_🚀 Funcionalidades do CódigoO código implementa as operações fundamentais de uma BST, seguindo rigorosamente a regra de organização: valores menores à esquerda, valores maiores à direita.1. 📥 Inserção (insere)Adiciona novos valores na posição correta da árvore de forma recursiva.2. 📄 Impressão Em-Ordem (imprime)O percurso ideal que segue a lógica Esquerda → Raiz → Direita. O resultado prático é a exibição de todos os valores da árvore ordenados de forma crescente.3. ❌ Remoção (remove)Implementação completa da remoção, cobrindo os três casos essenciais (0 filhos, 1 filho, 2 filhos).📂 Código-FonteNoArvore.javaEsta classe define a estrutura básica de cada nó e contém os métodos recursivos que manipulam a árvore (inserção, impressão e remoção).Javapublic class NoArvore {
+ Árvore Binária de Busca (BST) - Implementação em Java
+Este repositório contém o código-fonte da minha implementação didática e funcional de uma Árvore Binária de Busca (Binary Search Tree - BST), desenvolvida como projeto individual da disciplina de Estruturas de Dados II.
+
+O projeto foca na abordagem encadeada (ligada), que permite manipulação dinâmica da memória e maior eficiência nas operações.
+
+🎬 Assista ao VídeoTodo o conteúdo teórico, prático e a demonstração de execução deste código estão detalhados no meu vídeo oficial do projeto:PlataformaLinkYouTube https://youtu.be/UKE6F4jH0_M?si=96wslpEsqAeASg_-
+
+👤 Autor e Contato
+Autor: Kayo
+
+GitHub: Kay0ox
+
+Instagram: @kay0ox_
+
+🚀 Funcionalidades do Código
+O código implementa as operações fundamentais de uma BST, seguindo rigorosamente a regra de organização: valores menores à esquerda, valores maiores à direita.
+
+1. 📥 Inserção (insere)
+Adiciona novos valores na posição correta da árvore de forma recursiva.
+
+2. 📄 Impressão Em-Ordem (imprime)
+O percurso ideal que segue a lógica Esquerda → Raiz → Direita. O resultado prático é a exibição de todos os valores da árvore ordenados de forma crescente.
+
+3. ❌ Remoção (remove)
+Implementação completa da remoção, cobrindo os três casos essenciais (0 filhos, 1 filho, 2 filhos).
+
+📂 Código-Fonte
+NoArvore.java
+Esta classe define a estrutura básica de cada nó e contém os métodos recursivos que manipulam a árvore (inserção, impressão e remoção).
+public class NoArvore {
     int valor;
     NoArvore esquerda;
     NoArvore direita;
@@ -86,7 +115,13 @@
         return a;
     }
 }
-Principal.javaEsta classe é usada apenas para executar o código, criar a árvore e demonstrar a inserção e o percurso Em-Ordem.Javapublic class Principal {
+
+
+Principal.java
+Esta classe é usada apenas para executar o código, criar a árvore e demonstrar a inserção e o percurso Em-Ordem.
+
+
+public class Principal {
     public static void main(String[] args) {
         // Inicializa a árvore vazia
         NoArvore abb = null; 
@@ -118,4 +153,13 @@ Principal.javaEsta classe é usada apenas para executar o código, criar a árvo
         // Saída esperada: 1 2 3 5 6 7 8 9 
     }
 }
-🛠️ Como ExecutarClone este repositório.Abra o projeto na sua IDE.Execute o arquivo Principal.java.O console exibirá a sequência de valores inserida de forma desordenada e, em seguida, a saída perfeitamente ordenada pela função imprime, confirmando a organização da BST.
+
+
+🛠️ Como Executar
+Clone este repositório.
+
+Abra o projeto na sua IDE.
+
+Execute o arquivo Principal.java.
+
+O console exibirá a sequência de valores inserida de forma desordenada e, em seguida, a saída perfeitamente ordenada pela função imprime, confirmando a organização da BST.
