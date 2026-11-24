@@ -1,32 +1,28 @@
- Árvore Binária de Busca (BST) - Implementação em Java
+# Árvore Binária de Busca (BST) em Java
+
 Este repositório contém o código-fonte da minha implementação didática e funcional de uma Árvore Binária de Busca (Binary Search Tree - BST), desenvolvida como projeto individual da disciplina de Estruturas de Dados II.
 
-O projeto foca na abordagem encadeada (ligada), que permite manipulação dinâmica da memória e maior eficiência nas operações.
+O projeto usa a abordagem encadeada (cada nó aponta para os filhos), que permite manipular a memória de forma dinâmica.
 
-🎬 Assista ao VídeoTodo o conteúdo teórico, prático e a demonstração de execução deste código estão detalhados no meu vídeo oficial do projeto:PlataformaLinkYouTube https://youtu.be/UKE6F4jH0_M?si=96wslpEsqAeASg_-
+## 🎬 Vídeo
 
-👤 Autor e Contato
-Autor: Kayo
+A explicação teórica, a parte prática e a demonstração do código estão no vídeo do projeto: [assistir no YouTube](https://youtu.be/UKE6F4jH0_M?si=96wslpEsqAeASg_-)
 
-GitHub: Kay0ox
+## 🚀 Funcionalidades
 
-Instagram: @kay0ox_
+A árvore segue a regra da BST: valores menores ficam à esquerda e valores maiores ficam à direita.
 
-🚀 Funcionalidades do Código
-O código implementa as operações fundamentais de uma BST, seguindo rigorosamente a regra de organização: valores menores à esquerda, valores maiores à direita.
+1. **Inserção (`insere`):** coloca cada novo valor na posição correta, de forma recursiva.
+2. **Impressão em ordem (`imprime`):** percorre Esquerda → Raiz → Direita e mostra os valores em ordem crescente.
+3. **Remoção (`remove`):** trata os três casos: nó sem filhos, com 1 filho e com 2 filhos (usando o sucessor).
 
-1. 📥 Inserção (insere)
-Adiciona novos valores na posição correta da árvore de forma recursiva.
+## 📂 Código-fonte
 
-2. 📄 Impressão Em-Ordem (imprime)
-O percurso ideal que segue a lógica Esquerda → Raiz → Direita. O resultado prático é a exibição de todos os valores da árvore ordenados de forma crescente.
+### `NoArvore.java`
 
-3. ❌ Remoção (remove)
-Implementação completa da remoção, cobrindo os três casos essenciais (0 filhos, 1 filho, 2 filhos).
+Define o nó da árvore e os métodos recursivos de inserção, impressão e remoção.
 
-📂 Código-Fonte
-NoArvore.java
-Esta classe define a estrutura básica de cada nó e contém os métodos recursivos que manipulam a árvore (inserção, impressão e remoção).
+```java
 public class NoArvore {
     int valor;
     NoArvore esquerda;
@@ -115,12 +111,13 @@ public class NoArvore {
         return a;
     }
 }
+```
 
+### `Principal.java`
 
-Principal.java
-Esta classe é usada apenas para executar o código, criar a árvore e demonstrar a inserção e o percurso Em-Ordem.
+Cria a árvore e demonstra a inserção e o percurso em ordem.
 
-
+```java
 public class Principal {
     public static void main(String[] args) {
         // Inicializa a árvore vazia
@@ -153,13 +150,25 @@ public class Principal {
         // Saída esperada: 1 2 3 5 6 7 8 9 
     }
 }
+```
 
+## 🛠️ Como executar
 
-🛠️ Como Executar
-Clone este repositório.
+1. Crie os arquivos `NoArvore.java` e `Principal.java` com o código acima, na mesma pasta.
+2. Compile e rode:
 
-Abra o projeto na sua IDE.
+```bash
+javac NoArvore.java Principal.java
+java Principal
+```
 
-Execute o arquivo Principal.java.
+Saída esperada:
 
-O console exibirá a sequência de valores inserida de forma desordenada e, em seguida, a saída perfeitamente ordenada pela função imprime, confirmando a organização da BST.
+```
+>>> Iniciando percurso Em-Ordem (In-Order):
+1 2 3 4 5 6 7 8 9
+```
+
+## Autor
+
+**Kayo Victor Vilar Silva**: [LinkedIn](https://www.linkedin.com/in/kayo-victor-vilar-525205373/) · [GitHub](https://github.com/Kay0ox)
